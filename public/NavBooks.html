@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Books Navigation | LMS</title>
+    <link rel="shortcut icon" href="t.png">
+    <script src="jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="user-module-buttons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="dbfetcher.js"></script>
+    <script src="NavDetails.js"></script>
+
+    <script>
+    function setCursorByID(cardbutton,pointer) {
+      var elem;
+    if (document.getElementById &&
+      (elem=document.getElementById(cardbutton)) ) {
+  if (elem.style) elem.style.cursor=pointer;
+ }
+}
+    </script>
+
+
+
+ </head>
+
+
+  <body >
+<!--banner-->
+<div style="border-top: orange;border-top-style: solid;border-top-width: 2px;">
+  <img src="banner.jpg" width="100%" height="75%">
+</div>
+</div>
+<div class="container-fluid shadow-lg rounded text-center" style="color:white;background-color: rgb(0, 0, 0);border-bottom: orange;border-bottom-style: solid;border-bottom-width: 10px;font-size: 28px;">
+    <b>Librarian Module</b>
+</div>
+
+
+<!--banner ends-->              
+
+<!--space division-->
+        <div class="container-fluid">
+        <div class="row">
+
+            <div class="col rounded" style="background-color:antiquewhite; " >
+                <span class="card rounded shadow" style="background-color: #D8D4E2;">
+                    <span class="card rounded shadow sm" style="background-color:#00093C;font-size: 16px;margin-top: 5px; font-family:Arial, Helvetica, sans-serif;color:white;">
+                    <!--<script type="text/javascript" src="xbMarquee.js"></script>
+                    <script type="text/javascript">
+                      //set the marquee parameters
+                      function init() { down_marquee.start(); }
+                      var down_marquee_Text ='<p><b>TRAI</b> has taken several measures to protect the interests of consumers of telecom services.The primary responsibility for addressing customer complaints lies with the service providers not with <b>TRAI</b>.<br>'
+                      var down_marquee_Direction = 'down';
+                      var down_marquee_Contents='<span style="font-family:Comic Sans MS;font-size:12pt;white-space:nowrap;">' + down_marquee_Text + '</span>';
+                      down_marquee = new xbMarquee('down_marquee', '200px', '90%', 6, 100, down_marquee_Direction, 'scroll', down_marquee_Contents);
+                      window.setTimeout( init, 200);
+                      
+                    </script>-->
+                    <div class="marquee" style="margin-left:8px;margin-top:8px;">
+                      <marquee behavior="scroll" direction="up" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()">
+                       <b>Government</b> has taken several measures to protect the interests of the automation of waste handling services.
+                       The primary responsibility of the locals is to follow the steps mentioned thoroughly<b>(click here to read)</b>.<br>
+                       <br>&nbsp;<br>
+                       This website has been developed to help the customer in processing their complaints and monitor the system.
+                      </marquee> 
+                      </div>
+
+                    </span>
+                     <span>
+                        <button type="button" class="btn btn-secondary btn-block rounded" style="margin-top: 10px;margin-right: 10px;"><img src="bullet.png" width="18px">&nbsp;<b>Guidelines</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    </span>
+                    <span>
+                    <button type="button" class="btn btn-secondary btn-block"  style="margin-top: 10px;"><img src="bullet.png" width="18px">&nbsp;<b>Sign Out&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></button>
+                    
+                    </span>
+                    <span>
+                        <button id="myLink" type="button" class="btn btn-secondary btn-block" style="margin-top: 10px;"><img src="bullet.png" width="18px">&nbsp;<b>Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></button>
+                        <script>
+                            var myLink = document.getElementById('myLink');
+                                                      
+                                                      myLink.onclick = function(){
+                                                        window.location.href = "index.html";
+                                                      
+                                                      }
+                    </script>
+                    </span>
+                    </span>
+                    </div>
+
+            <span class="col-lg-9 container-fluid rounded" style="background-color:#D8D4E2;">
+              
+              <h4><b>Search</b></h4>
+              <input id="myInput" onkeyup="searchFun()" type="text" class="form-control" placeholder="Name of the Book" aria-label="bookname" aria-describedby="basic-addon2">
+              
+                <div style="border-top:orange;border-top-style: solid;border-top-width: 4px;">
+                    </div>
+                <span class="card border shadow rounded container-fluid" style="font-size: 16px;background-color:rgb(182, 123, 12);"> 
+              
+                <div id="tableholder" class="row d-flex flex-wrap pre-scrollable" style="margin-left:10px;margin-right:10px;margin-top: 5px;">
+                 <!--class pre-scrollable provides a scrollable window but acts only on div elements-->
+                            <table class="table table-dark table-bordered "  cellspacing="10" cellpadding="10">
+                                <thead>    
+                                <tr>
+                                        <th>Id</th>
+                                        <th>Book Name</th>
+                                        <th>Floor</th>
+                                        <th>Almirah</th>
+                                        <th>Shelf</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody  class="overflow-auto" id="bookclasslist">
+                                    <tr>
+                                            <td>Id : Fetching</td>
+                                            <td>Name : Fetching</td>
+                                            <td>Floor : Fetching</td>
+                                            <td>Almirah : Fetching</td>
+                                            <td>Shelf : Fetching</td>
+                                        </tr>
+                                    </tbody>
+    
+                                </table>
+
+                        
+                </div>
+
+
+
+                   </span>
+                   </span>
+
+        </div>
+
+        </div>
+<!--space division ends-->
+<script>
+const searchFun = () =>{
+let filter = document.getElementById('myInput').value.toUpperCase();
+let bookclasslist = document.getElementById('bookclasslist');
+let tr = bookclasslist.getElementsByTagName('tr');
+for(var i=0; i<tr.length; i++){
+  let td = tr[i].getElementsByTagName('td')[1];
+  if(td){
+    let textvalue = td.textContent || td.innerHTML;
+    if(textvalue.toUpperCase().indexOf(filter) > -1){
+      tr[i].style.display = "";
+    }else{
+      tr[i].style.display = "none";
+    }
+  }
+}
+
+
+}
+</script>
+
+<!--footer-->
+
+      <footer class="rounded" style="background:transparent url('banner-bottom.jpg');border-top: orange;border-top-style: solid;border-top-width: 5px;border-bottom: orange;border-bottom-style:solid;border-bottom-width: 2px;">
+        <div>
+          <div id="google_translate_element"></div>
+          <script type="text/javascript"> 
+            function googleTranslateElementInit() { 
+              new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element'); 
+            } 
+            </script> 
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+
+<!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="phone.png" width="20px" style="margin-top:6px; margin-right:6px;" >
+        <h5 class="modal-title " id="contactModalLabel"><b>Contact Us</b></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="border-bottom:orange;border-bottom-style:solid;border-bottom-width:4px; background-color: #D8D4E2;text-align: justify;">
+        <ul>
+        <li>Address : <br>	THE TELECOM REGULATORY AUTHORITY OF INDIA
+                    Mahanagar Doorsanchar Bhawan,
+                    (next to Zakir Hussain College)
+                    Jawaharlal Nehru Marg
+                    (Old Minto Road)
+                    New Delhi : 110 002</li><br>
+    
+         <li>       Telephone No. : 	91-11-2323 6308 91-11-2323 6308 (Reception)
+                                      2323 3466, 2322 0534, 2321 3223</li>
+    
+         <li>       Fax No. : 	91-11-2321 3294 91-11-2321 3294 (Reception)</li><br>
+         <li>       E-mail : 	ap[at]trai[dot]gov[dot]in</li>
+      </ul> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modal ends--> 
+
+<!-- Modal - disclaimer -->
+<div class="modal fade" id="disclaimerModal" tabindex="-1" role="dialog" aria-labelledby="disclaimerModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <img src="disclaimer.png" width="20px" style="margin-top:6px; margin-right:6px;" >
+      <h5 class="modal-title " id="disclaimerModalLabel"><b>Disclaimer</b></h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body" style="border-bottom:orange;border-bottom-style:solid;border-bottom-width:4px; background-color: #D8D4E2;text-align: justify;">
+                             TRAI Act, 1997 does not envisage handling of individual consumer complaints by TRAI.<br> 
+                             Consumers are advised to take up their complaints with their respective service providers.
+                             Complaints, if any, received in TRAI are forwarded to the service providers. 
+                             No follow up action is taken by TRAI on individual complaint(s).<br> 
+                             For any clarification/feedback consumer can contact Sr. Research Officer (Consumer Affairs) at e-mail daca[at]trai[dot]gov[dot]in.<br> 
+                             Telecom Regulatory Authority of India will not be liable for any loss, damage or expense incurred or suffered that is claimed to have resulted from the use of this system, including, without limitation any fault, error, omission, interruption or delay with respect thereto.
+                             &nbsp; 
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+<!--modal ends-->
+
+<div style="text-align: center;color: white;font-size: 15px;margin-top: 2px;margin-bottom: 2px">
+  <b>Website Designed, Developed and Hosted by<a href="www.nic.in"> Hack 'o' Holics</a><b></b><br>
+</div>
+  
+    
+</footer>
+
+<!--footer ends-->
+
+
+
+  
+    
+</body>
+</html>
+

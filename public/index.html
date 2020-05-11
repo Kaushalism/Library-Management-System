@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Librarian Moule | LMS</title>
+    <link rel="shortcut icon" href="t.png">
+    
+
+    <link rel="stylesheet" href="user-module-buttons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="jquery-3.4.1.js"crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+    function setCursorByID(cardbutton,pointer) {
+      var elem;
+    if (document.getElementById &&
+      (elem=document.getElementById(cardbutton)) ) {
+  if (elem.style) elem.style.cursor=pointer;
+ }
+}
+    </script>
+
+
+
+ </head>
+
+
+  <body >
+<!--banner-->
+<div style="border-top: orange;border-top-style: solid;border-top-width: 2px;background: linear-gradient(to bottom, rgb(255, 255, 255,0) 0%, rgb(5, 0, 0) 100%);">
+  <img src="banner.jpg" width="100%" height="75%">
+</div>
+</div>
+
+
+
+<!--banner ends-->              
+
+<!--space division-->
+        <div class="container-fluid">
+        <div class="row" >
+          <div class="container-fluid shadow-lg rounded" style="color: white;background-color: rgb(0, 0, 0);border-bottom: orange;border-bottom-style: solid;border-bottom-width: 10px;font-size: 28px;">
+            <b>Librarian Module</b>
+            
+            <span class="inline" style="text-align: justify;">
+              <button type="button" class="btn btn-secondary" style="margin-left:660px;margin-top: 10px;margin-bottom: 10px;"><img class="shadow" src="bullet.png" width="18px" ><b>Change Password</b></button>
+            </span>
+           <!-- <span>
+              <button type="button" class="btn btn-secondary btn-block" style="margin-top: 10px"><img src="bullet.png" width="18px" style="margin-left: 18px;"><b>&nbsp;Reports&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></button>
+            </span>-->
+            <span>
+                <button type="button" class="btn btn-secondary rounded" style="margin-top: 10px;margin-bottom: 10px;"><img src="bullet.png" width="18px"><b>Guidelines</b></button>
+            </span>
+            <span>
+            <button type="button" class="btn btn-secondary"  style="margin-top: 10px;margin-bottom: 10px;"><img src="bullet.png" width="18px"><b>Sign Out</b></button>
+            
+            </span>
+            </span>
+        </div>
+
+            <div class="container-fluid rounded " style="background-image: url('bb.jpg');height:fit-content;">
+               <span class="row d-flex flex-wrap" style="margin-top: 5px;background: linear-gradient(to bottom, rgb(255, 255, 255,0) 0%, rgb(5, 0, 0) 100%);">
+                <span class="row d-flex flex-wrap" style="margin-left:300px">
+                        <div>
+                            <div id="cardbutton1" class="btn-primary btn-block border mb-2 shadow rounded text-center " onclick="Card_response1(),setCursorByID()">
+                              <img class="card-img-top" src="report.png">
+                                <span class="card-body">
+                                  <p class="card-text text-decoration-none" style="margin-left: 15px;color:white;"><b>Books Classification<br></b></p>
+                                      <script>
+                                      function Card_response1()
+                                      {
+                                        window.open('ColDetails.html')
+                                          
+                                      } 
+                                  </script> 
+                                 </span>
+                              </div>
+                        </div>
+
+                        <div>
+                            <div id="cardbutton2" class="btn-success btn-block border mb-3 shadow rounded text-center "onclick="Card_response2()">
+                                <img class="card-img-top" src="report.png">
+                                <div class="card-body">
+                                  <p class="card-text text-decoration-none" style="color:white;"><b>Book Navigation</b>&nbsp;</p>
+                                  <script>
+                                      function Card_response2()
+                                      {
+                                        window.open('NavBooks.html', '_blank')
+                                          
+                                      } 
+                                  </script>
+
+                                </div>
+                              </div>
+                        </div>
+                                                
+                      <div>
+                        <div id="cardbutton3" class="btn-info btn-block border mb-3 shadow rounded text-center "onclick="Card_response3()" style=" margin-top: 20px;margin-left: 40px;" >
+                            <img class="card-img-top" src="upload.png">
+                            <div class="card-body">
+                              <a href="http://tccms.gov.in/Queries.aspx?cid=2" target="_blank"  class="card-text text-decoration-none" style="color:white;"><b>Book Physical Condition</b></a>
+
+
+                            </div>
+                          </div>
+                    </div>
+
+                        <div class="w-100"></div>
+                        
+                        <div>
+                            <div id="cardbutton3" class="btn-warning btn-block border mb-3 shadow rounded text-center "onclick="Card_response3()">
+                                <img class="card-img-top" src="search.png">
+                                <div class="card-body">
+                                  <a href="http://tccms.gov.in/Queries.aspx?cid=2" target="_blank"  class="card-text text-decoration-none" style="color:white;"><b>Book Availablity</b></a>
+
+
+                                </div>
+                              </div>
+                        </div>
+
+                        <div>
+                            <div id="cardbutton4" class="btn-danger border mb-3 shadow rounded text-center "onclick="Card_response4()">
+                                <img class="card-img-top" src="search.png">
+                                <div class="card-body"> 
+                                  <a href="reportfilter.html" target="_blank"  class="card-text text-decoration-none" style="color:white;"><b>Book Loan System</b></a>
+                                  <script>
+                                      function Card_response4()
+                                      {
+                                        window.open('pdfGenerator.html', '_blank')
+                                          
+                                      } 
+                                  </script>
+
+                                </div>
+                              </div>
+                        </div>
+                        <div>
+                            <div id="cardbutton3" class="btn-info btn-block border mb-3 shadow rounded text-center "onclick="Card_response3()" style="margin-left: 40px;" >
+                                <img class="card-img-top" src="upload.png">
+                                <div class="card-body">
+                                  <a href="http://tccms.gov.in/Queries.aspx?cid=2" target="_blank"  class="card-text text-decoration-none" style="color:white;"><b>Account Details</b></a>
+    
+    
+                                </div>
+                              </div>
+                        </div>
+                        </span>
+
+                    </span>
+                    </div>
+
+        </span>
+
+        </div>
+<!--space division ends-->
+
+<!--footer-->
+<div class="row" style="background-image:url('banner-bottom.jpg');border-top: orange;border-top-style: solid;border-top-width: 5px;border-bottom: orange;border-bottom-style:solid;border-bottom-width: 2px;">
+<div>
+          <div id="google_translate_element"></div>
+          <script type="text/javascript"> 
+            function googleTranslateElementInit() { 
+              new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element'); 
+            } 
+            </script> 
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+
+           <div style="text-align: center;color: white;font-size: 15px;margin-top: 2px;margin-bottom: 5px">
+             <b>Website Designed, Developed and Hosted by <h4>TechStack</h4><b></b>
+           </div>
+  
+    
+</div>
+</div>
+
+<!--footer ends-->
+
+
+
+  
+    
+</body>
+</html>
+

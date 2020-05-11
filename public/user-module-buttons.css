@@ -1,0 +1,51 @@
+#cardbutton1{
+    background-color:#27ae60;
+    border-radius: 25px;
+    width: 13rem;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4rem!important;
+}
+#cardbutton1:hover{
+
+    width: 13.5rem;
+}
+
+#cardbutton2{
+    background-color:#2980b9;
+    width: 13rem;
+    margin-top: 21px;
+    cursor: pointer;
+    border-radius: 4rem!important;
+
+}
+#cardbutton2:hover{
+
+    width: 13.5rem;
+}
+
+#cardbutton3{
+    background-color: #d35400;
+    width: 13rem; 
+    margin-right:50px;
+    margin-bottom: 70px;
+    cursor: pointer;
+    border-radius: 4rem!important;
+
+
+}
+#cardbutton3:hover{
+
+    width: 13.5rem;
+}
+#cardbutton4{
+    background-color:#f39c12;
+    width: 13rem;
+    cursor: pointer;
+    border-radius: 4rem!important;
+}
+#cardbutton4:hover{
+    width: 13.5rem;
+}

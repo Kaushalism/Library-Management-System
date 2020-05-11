@@ -1,0 +1,74 @@
+#cardbutton1{
+    width: 19rem;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    background-image: linear-gradient(to right,#007BFF,rgb(3, 59, 119));
+    cursor: pointer;
+    border-radius: 25px!important;
+    
+}
+#cardbutton1:hover{
+    background-image: linear-gradient(to right,#007BFF,rgb(2, 22, 44));
+    width: 18.5rem;
+}
+#cardbutton2{
+    width: 19rem;
+    margin-top: 21px;
+    background-image: linear-gradient(to right,#28A745,rgb(7, 71, 22));
+    cursor: pointer;
+    border-radius: 25px!important;
+
+}
+#cardbutton2:hover{
+    background-image: linear-gradient(to right,#28A745,rgb(2, 29, 8));
+    width: 18.5rem;
+}
+#cardbutton3{
+    width: 19rem; 
+    margin-right:50px;
+    margin-bottom: 50px;
+    background-image:linear-gradient(to right,#FFC107,rgb(153, 116, 5));
+    cursor: pointer;
+    border-radius: 25px!important;
+
+
+}
+#cardbutton3:hover{
+    background-image:linear-gradient(to right,#FFC107,rgb(59, 45, 2));
+    width: 18.5rem;
+}
+#cardbutton4{
+    width: 19rem;
+    background-image: linear-gradient(to right,#C82333,rgb(100, 5, 15));
+    cursor: pointer;
+    border-radius: 25px!important;
+
+}
+#cardbutton4:hover{
+    background-image: linear-gradient(to right,#C82333,rgb(43, 6, 9));
+    width: 18.5rem;
+}
+#hovertext{
+    visibility: hidden;
+    width: 240px;
+    background-color: #00093C;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: relative;
+    z-index: 1;
+}
+#cardbutton3:hover #hovertext{
+visibility: visible;
+}
+#cardbutton4:hover #hovertext{
+    visibility: visible;
+}
+#sidebutton{
+    background-image:linear-gradient(to right,rgb(40,167,69),rgb(7, 97, 28));
+}
+#sidebutton:hover{
+    background-image:linear-gradient(to right,rgb(28, 122, 50),rgb(6, 82, 24));
+}
